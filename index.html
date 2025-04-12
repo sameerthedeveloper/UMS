@@ -39,7 +39,7 @@
     <div class="w-screen p-4 shadow bg-white">
         <h1 class="text-2xl font-stretch-ultra-condensed ">UNIVERSITY MANAGEMENT SYSTEM</h1>
     </div>
-<div class="home hidden">
+<div class="home ">
 
     
 
@@ -129,8 +129,18 @@
 
 </div>
 
-<div class="noti ">
-<h1>Notification</h1>
+<div class="noti hidden">
+    <div class="flex flex-col m-4 justify-between bg-white p-4 gap-4 rounded-xl shadow-2xl dark:bg-gray-800">
+        <div class="flex flex-col">
+            <h1 class="text-md font-bold text-gray-800 dark:text-white">Notifications</h1>
+
+        </div>
+        <div class="flex flex-col justify-center items-center text-center shadow-2xl border-1 rounded-md ">
+
+            <p class="p-20"> <i class="fa-solid fa-bell text-5xl"></i> <br><br>No Notifications Available!</p>
+        </div>
+
+    </div>
 
 </div>
 <!-- Footer Section  -->
@@ -146,7 +156,7 @@
 
             <!-- Invoices Tab -->
             <div
-                class="flex flex-col items-center text-black hover:text-gray-500 cursor-pointer item invoice dark:text-white">
+                class="flex flex-col items-center text-black hover:text-gray-500 cursor-pointer item noti dark:text-white">
                 <i class="fa-solid fa-bell"></i>
                 <span class="text-sm">Notification</span>
             </div>
@@ -174,6 +184,7 @@
             });
         }
     </script>
+    <script src="tab_controll.js"></script>
     
 </body>
 
